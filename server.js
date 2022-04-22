@@ -4,7 +4,7 @@ const http = require('http').createServer(app)
 const path = require('path')
 const io = require('socket.io')(http)
 require('dotenv').config()
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8181
 
 app.use(express.static(path.resolve('public')))
 
